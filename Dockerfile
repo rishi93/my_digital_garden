@@ -24,7 +24,7 @@ WORKDIR /app
 #     --mount=type=bind,source=package-lock.json,target=package-lock.json \
 #     --mount=type=cache,target=/root/.npm \
 #     npm ci --omit=dev
-COPY package.json package-lock.json /app/
+COPY package.json  /app/
 
 RUN npm install
 
